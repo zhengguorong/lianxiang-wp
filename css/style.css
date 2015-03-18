@@ -1,0 +1,199 @@
+a:link, a:visited {
+    color: #666666;
+    text-decoration: none;
+}
+body,a{
+    font-family: 'Lucida Grande', Helvetica, Arial, Verdana, 微软雅黑, sans-serif;
+    font-size: 12px;
+}
+.container-fluid{
+    padding: 0;
+}
+header{
+    border-bottom: 2px solid rgb(217,217,217);
+}
+header .phone{
+    text-align: right;
+    height: 38px;
+    font-size: 12px;
+    line-height: 38px;
+}
+header .phone span{
+    margin-left: 5px;
+}
+header .nav .menu ul{
+    border: 1px solid rgb(226,226,226);
+    border-radius: 5px;
+    padding: 0px;
+    background-color: rgb(250, 250, 250);
+    overflow: hidden;
+    box-shadow: 3px 3px 8px #666;
+
+}
+header .nav .menu ul li{
+    float: left;
+    list-style: none;
+    width: 123px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+header .nav .menu ul li:not(.active):hover{
+    background-color: rgb(232,232,232);
+    border: 1px solid rgb(221,221,221);
+}
+
+header .nav .menu ul li.active{
+    background-image: -moz-linear-gradient(top, rgb(255,196,0), rgb(255,139,0)); /* Firefox */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255,196,0)), color-stop(1, rgb(255,139,0))); /* Saf4+, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgb(255,196,0)', endColorstr='rgb(255,139,0)', GradientType='0'); /* IE*/
+}
+header .nav .menu ul li.active a{
+    color:#fff;
+    text-shadow: 1px 1px 0 rgb(255,78,0);
+
+}
+header .nav .menu ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 40px;
+    overflow: hidden;
+    color: #4b4b4b;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+    display:block;
+}
+header .block{
+    height: 30px;
+}
+#content .left,.min,.right{
+    border: solid 1px #CCC;
+    border-bottom: solid 1px #CCC;
+    padding: 0;
+}
+#content{
+    padding-bottom: 30px;
+}
+
+#content .title{
+    border: solid 1px #FFF;
+    border-bottom: solid 0px #FFF;
+    padding: 12px 20px;
+    font-weight: bold;
+    height: 48px;
+    font-size: 15px;
+    font-family: "微软雅黑", Arial;
+    background-color: rgb(240, 240, 240);
+}
+#content .content{
+    background-color: rgb(247, 247, 247);
+    line-height: 26px;
+    font-size: 12px;
+    font-family: 微软雅黑;
+    padding: 10px 15px 10px 15px;
+    min-height: 234px;
+}
+#content .content img{
+    padding: 2px;
+    border: #cccccc 1px solid;
+}
+#content .content .name{
+    text-align: center;
+}
+#content .min .content div{
+    padding: 0 0;
+    text-align: center;
+}
+#content .right .content ul{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#content .right .content ul li{
+    border-bottom:dotted 1px #CCC;
+}
+#content .right .content ul li .time{
+    float: right;
+}
+
+/*关于我们样式*/
+.greyBg{
+    background: #f2f2f2 url(../img/greybg_shadow.gif) bottom repeat-x;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.leftmenu{
+    float: left;
+    width: 20%;
+}
+.leftmenu ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+}
+.leftmenu ul li a{
+    display: block;
+    width: 199px;
+    padding: 0px 0px 0px 25px;
+    height: 35px;
+    line-height: 35px;
+    background: url(../img/leftmenuoff.gif) 0px 0px no-repeat;
+    color: #000!important;
+    font-family: 微软雅黑;
+    font-size: 14px;
+}
+
+#aboutContent .title{
+    height: 48px;
+    line-height: 30px;
+    white-space: nowrap;
+    font-size: 28px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    color: #646464;
+}
+#aboutContent .map{
+    text-align: right;
+    height: 48px;
+    line-height: 30px;
+}
+
+.listContent .name{
+    padding: 5px 5px;
+    background: #F4F2EC;
+    font-size: 14px;
+}
+.listContent img{
+    width: 100%;
+}
+.listContent .content{
+    padding: 2px;
+    border: #cccccc 1px solid;
+    margin-bottom: 10px;
+}
+footer{
+    text-align: center;
+    border-top: 1px solid #d6d6d6;
+    color: rgb(153, 153, 153);
+    padding: 20px 0;
+    background-color: rgb(249, 249, 249);
+}
+footer .footerNav span{
+    margin: 0 10px;
+}
+footer .footerNav{
+    color:rgb(102, 102, 102);
+}
+footer .footerNav span a{
+    margin-right: 20px;
+}
+footer .footerNav span:after{
+    content:"|";
+ }
+footer .footerNav span:last-child:after{
+    content:"";
+}
+footer .powerBy a{
+    color: rgb(153, 153, 153);
+}
