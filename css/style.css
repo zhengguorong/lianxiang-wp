@@ -98,12 +98,14 @@ header .block{
 #content .content img{
     padding: 2px;
     border: #cccccc 1px solid;
+    width: 100%;
+    height:80px ;
 }
 #content .content .name{
     text-align: center;
 }
 #content .min .content div{
-    padding: 0 0;
+    padding: 0 10px;
     text-align: center;
 }
 #content .right .content ul{

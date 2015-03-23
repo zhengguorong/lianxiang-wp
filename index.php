@@ -32,7 +32,10 @@
                     ?>
                     <?php if($posts) {
                         foreach ($posts as $post) {
-                            echo '<div class="col-md-3 col-sm-3 col-xs-6"><a href=""><img src="img/timthumb.jpeg" alt=""/><div class="name">6元粽子</div></a></div>';
+                            echo '<div class="col-md-3 col-sm-3 col-xs-6"><a href="">';
+                            the_post_thumbnail('medium');
+                            echo the_title('<div class="name">','</div>');
+                            echo '</a></div>';
                         }
                     }?>
                     <span style="display:block; clear:both; height:0;"></span>
@@ -44,11 +47,18 @@
             <div class="title">新闻资讯</div>
             <div class="content">
                 <ul>
-                    <li><span class="time">12-06</span><a href="">谁才是蔬菜中的皇后</a></li>
-                    <li><span class="time">12-06</span><a href="">谁才是蔬菜中的皇后</a></li>
-                    <li><span class="time">12-06</span><a href="">谁才是蔬菜中的皇后</a></li>
-                    <li><span class="time">12-06</span><a href="">谁才是蔬菜中的皇后</a></li>
-                    <li><span class="time">12-06</span><a href="">谁才是蔬菜中的皇后</a></li>
+                    <?php $catId=get_cat_ID("新闻咨询");
+                    $posts=get_posts(array('category'=>$catId));
+                    ?>
+                    <?php
+                        if($posts){
+
+                            foreach($posts as $post){
+                                the_title(' <li><span class="time">12-6</span><a href="">','</a></li>');
+                            }
+                        }
+                    ?>
+
                 </ul>
             </div>
         </div>
