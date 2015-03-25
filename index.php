@@ -21,7 +21,12 @@
     <div class="container">
         <div class="left col-md-3">
             <div class="title">关于我们</div>
-            <div class="content">盐城百信餐饮管理有限公司是一家倡导“绿色菜品、健康饮食”的现代餐饮企业，自2010年5月创立以来，遵循“创新美味、引领时尚、服务大众、美味到家”的核心理念，倾心打造“中式餐饮外送品牌”。 ...</div>
+            <div class="content">
+            <?php
+            $post=get_page_by_title( '关于我们' );
+            echo $post->post_content;
+            ?>
+            </div>
         </div>
         <div class="col-md-6">
             <div class="min">
@@ -52,7 +57,6 @@
                     ?>
                     <?php
                         if($posts){
-
                             foreach($posts as $post){
                                 the_title(' <li><span class="time">12-6</span><a href="">','</a></li>');
                             }
