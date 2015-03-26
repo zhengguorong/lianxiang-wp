@@ -34,15 +34,9 @@
                 <div class="content">
                     <?php $catId=get_cat_ID("美食中心");
                           $posts=get_posts(array('category'=>$catId,'numberposts'=>6));
-                    ?>
-                    <?php if($posts) {
-                        foreach ($posts as $post) {
-                            echo '<div class="col-md-3 col-sm-3 col-xs-6"><a href="">';
-                            the_post_thumbnail('medium');
-                            echo the_title('<div class="name">','</div>');
-                            echo '</a></div>';
-                        }
-                    }?>
+                          foreach ($posts as $post) :?>
+                           <div class="col-md-3 col-sm-3 col-xs-6"><a href=""><?php the_post_thumbnail('medium');?><?php the_title()?></a></div>
+                    <?php endforeach?>
                     <span style="display:block; clear:both; height:0;"></span>
                 </div>
             </div>
@@ -52,16 +46,13 @@
             <div class="title">新闻资讯</div>
             <div class="content">
                 <ul>
-                    <?php $catId=get_cat_ID("新闻咨询");
+                    <?php $catId=get_cat_ID("新闻资讯");
                     $posts=get_posts(array('category'=>$catId));
-                    ?>
-                    <?php
-                        if($posts){
-                            foreach($posts as $post){
-                                the_title(' <li><span class="time">12-6</span><a href="">','</a></li>');
-                            }
-                        }
-                    ?>
+                    foreach($posts as $post):?>
+                    <li><span class="time"><?php echo get_post_time('m-d')?></span><a href=""><?php echo $post->post_title?></a></li>
+                    <?php endforeach;?>
+
+
 
                 </ul>
             </div>

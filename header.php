@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/lib/bootstrap/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/lib/swiper/idangerous.swiper.css"/>
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/css/style.css"/>
-
+    <title><?php bloginfo("name")?></title>
 </head>
 <body>
 <header>
