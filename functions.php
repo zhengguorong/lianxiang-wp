@@ -7,6 +7,7 @@
  */
 register_nav_menus(array(
     'top-menu'=>'顶部菜单',
+    'left-menu'=>'左侧菜单',
 ));
 //修改导航当前页面的class名字
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);

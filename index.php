@@ -43,7 +43,7 @@
                         <?php $catId=get_cat_ID("美食中心");
                         $posts=get_posts(array('category'=>$catId,'numberposts'=>6));
                         foreach ($posts as $post) :?>
-                            <div class="col-md-3 col-sm-3 col-xs-6"><a href=""><?php the_post_thumbnail('medium');?><?php the_title()?></a></div>
+                            <div class="col-md-3 col-sm-3 col-xs-6"><a href="<?php echo get_permalink()?>"><?php the_post_thumbnail('medium');?><?php the_title()?></a></div>
                         <?php endforeach?>
                     <span style="display:block; clear:both; height:0;"></span>
                 </div>
@@ -58,7 +58,7 @@
                     <?php $catId=get_cat_ID("促销活动");
                     $posts=get_posts(array('category'=>$catId));
                     foreach($posts as $post):?>
-                    <li><span class="time"><?php echo get_post_time('m-d')?></span><a href=""><?php echo $post->post_title?></a></li>
+                    <li><span class="time"><?php echo get_post_time('m-d')?></span><a href="<?php echo get_permalink()?>"><?php echo $post->post_title?></a></li>
                     <?php endforeach;?>
                 </ul>
                 </div>

@@ -62,6 +62,10 @@ function optionsframework_options() {
         "name" => "地址",
         "id" => "address",
         "type" => "text");
+    $options[] = array(
+        "name" => "分类页广告",
+        "id" => "catbanner",
+        "type" => "upload");
 
 
     return $options;

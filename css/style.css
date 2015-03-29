@@ -161,7 +161,9 @@ header .block{
     font-family: 微软雅黑;
     font-size: 14px;
 }
-
+#aboutContent{
+    min-height: 500px;
+}
 #aboutContent .title{
     height: 48px;
     line-height: 30px;
@@ -184,11 +186,58 @@ header .block{
 }
 .listContent img{
     width: 100%;
+    height: 140px;
 }
 .listContent .content{
     padding: 2px;
     border: #cccccc 1px solid;
     margin-bottom: 10px;
+}
+.newslist{
+    height: 92px;
+    float: left;
+    padding-bottom: 7px;
+    background: url(../img/dotted_h.gif) 0px 92px repeat-x;
+    margin-top: 25px;;
+}
+.newsContain h3{
+    font-size: 16px;
+    font-family: 微软雅黑;
+    color: #222222;
+    font-weight: normal;
+    height: 32px;
+    line-height: 26px;
+    margin: 0 0;
+    font-weight: bold;
+}
+.newsContain p {
+    height: 44px;
+    overflow: hidden;
+    color: #9c9b99;
+}
+.newsTime{
+    background: url("../img/news_timebgoff.gif") left top no-repeat;
+    height: 41px;
+    text-align: center;
+    float: left;
+    margin-top: 5px;
+}
+.nt02 {
+    height: 28px;
+    line-height: 28px;
+    font-size: 20px;
+    color: #292929;
+}
+.newsTime span {
+    display: block;
+    width: 100%;
+}
+.nt01 {
+    height: 12px;
+    line-height: 12px;
+    font-size: 9px;
+    font-family: Verdana;
+    color: white;
 }
 footer{
     text-align: center;
