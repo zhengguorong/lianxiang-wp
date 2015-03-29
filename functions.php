@@ -27,10 +27,7 @@ if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'customized-post-thumb', 100, 120 );
 }
 
-if (!function_exists('optionsframework_init')){
-    define('OPTIONS_FRAMEWORK_DIRECTORY', get_template_directory_uri().'/inc/');
-    require_once dirname(__FILE__).'/inc/options-framework.php';
-}
+
 
 
 ?>
