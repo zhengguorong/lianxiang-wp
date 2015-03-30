@@ -56,23 +56,21 @@ header .nav .menu ul li:not(.active):hover{
 }
 
 header .nav .menu ul li.active{
-    background-image: -moz-linear-gradient(top, rgb(255,196,0), rgb(255,139,0)); /* Firefox */
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(255,196,0)), color-stop(1, rgb(255,139,0))); /* Saf4+, Chrome */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgb(255,196,0)', endColorstr='rgb(255,139,0)', GradientType='0'); /* IE*/
+   background: #81b332;
 }
 header .nav .menu ul li.active a{
     color:#fff;
-    text-shadow: 1px 1px 0 rgb(255,78,0);
+    /*text-shadow: 1px 1px 0 rgb(255,78,0);*/
 
 }
 header .nav .menu ul li a{
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 40px;
     overflow: hidden;
     color: #4b4b4b;
     font-weight: bold;
-    text-shadow: 1px 1px 0 #fff;
+    /*text-shadow: 1px 1px 0 #fff;*/
     display:block;
 }
 header .block{
