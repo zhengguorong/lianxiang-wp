@@ -37,7 +37,7 @@ get_header();
                     <?php foreach($posts as $post):?>
                         <div class="col-md-4">
                             <div class="content">
-                                <a href=""><?php the_post_thumbnail('medium');?><div class="name"><?php the_title()?></div></a>
+                                <a href="<?php echo get_permalink()?>"><?php the_post_thumbnail('medium');?><div class="name"><?php the_title()?></div></a>
                             </div>
                         </div>
                     <?php endforeach?>
