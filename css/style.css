@@ -82,6 +82,26 @@ header .block{
 #banner img{
     max-height: 500px;
 }
+
+
+#banner .swiper-pagination {
+    position: absolute;
+    z-index: 20;
+    left: 50%;
+    bottom: 10px;
+}
+#banner .swiper-pagination .swiper-pagination-switch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin: 8px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+#banner  .swiper-pagination .swiper-active-switch {
+    background: #fff;
+}
 #content .left,.min,.right{
     border: solid 1px #CCC;
     border-bottom: solid 1px #CCC;

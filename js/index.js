@@ -4,6 +4,7 @@ var mySwiper = new Swiper ('#banner .swiper-container', {
     loop: true,
     calculateHeight: true,
     pagination: '#banner .swiper-pagination',
-    paginationClickable: true
+    paginationClickable: true,
+    autoplay:4000
 
 })
