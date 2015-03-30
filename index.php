@@ -41,7 +41,7 @@
                 <div class="title">美食中心</div>
                 <div class="content">
                         <?php $catId=get_cat_ID("美食中心");
-                        $posts=get_posts(array('category'=>$catId,'numberposts'=>6));
+                        $posts=get_posts(array('category'=>$catId,'numberposts'=>8));
                         foreach ($posts as $post) :?>
                             <div class="col-md-3 col-sm-3 col-xs-6"><a href="<?php echo get_permalink()?>"><?php the_post_thumbnail('medium');?><?php the_title()?></a></div>
                         <?php endforeach?>
