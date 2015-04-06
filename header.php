@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/lib/bootstrap/bootstrap.min.css"/>
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/lib/bootstrap/bootstrap-theme.min.css"/>
     <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() ); ?>/lib/swiper/idangerous.swiper.css"/>
@@ -30,8 +31,8 @@
         </div>
         <div class="nav">
             <div class="row">
-                <div class="logo col-md-2"><img alt="<?php bloginfo('name'); ?>" src=<?php echo of_get_option("logo")?>></div>
-                <div class="menu col-md-9 col-md-offset-1">
+                <div class="logo col-md-2 col-xs-2"><img alt="<?php bloginfo('name'); ?>" src=<?php echo of_get_option("logo")?>></div>
+                <div class="menu col-md-9 col-xs-9 col-md-offset-1 col-xs-offset-1">
                     <?php wp_nav_menu()?>
                 </div>
             </div>

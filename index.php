@@ -24,10 +24,10 @@
 </section>
 <section id="content">
     <div class="container">
-        <div class="left col-md-3">
+        <div class="left col-md-3 col-xs-3">
             <div class="title">关于我们</div>
             <div class="content">
-                <div class="col-md-12">
+                <div class="col-md-12 col-xs-12">
                     <?php
                     $post=get_page_by_title( '关于我们' );
                     echo $post->post_content;
@@ -36,7 +36,7 @@
 
             </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-6">
             <div class="min">
                 <div class="title">美食中心</div>
                 <div class="content">
@@ -50,10 +50,10 @@
             </div>
 
         </div>
-        <div class="right col-md-3">
+        <div class="right col-md-3 col-xs-3">
             <div class="title">促销活动</div>
             <div class="content">
-                <div class="col-md-12">
+                <div class="col-md-12 col-xs-12">
                 <ul>
                     <?php $catId=get_cat_ID("促销活动");
                     $posts=get_posts(array('category'=>$catId));
